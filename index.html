@@ -1,0 +1,449 @@
+<!DOCTYPE html>                                                                                                 <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR">                                                                                            <!-- Define o idioma do documento como Português do Brasil -->
+<head>                                                                                                         <!-- Início do cabeçalho do documento -->
+    <meta charset="UTF-8">                                                                                     <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                                    <!-- Configura a viewport para dispositivos móveis -->
+    <meta name="description" content="Solução tecnológica inovadora para otimização de processos empresariais"><!-- Descrição da página para SEO -->
+    <meta name="keywords" content="software, tecnologia, automação, gestão">                                  <!-- Palavras-chave para SEO -->
+    <meta name="author" content="Sua Empresa">                                                                <!-- Define o autor do site -->
+    <meta property="og:title" content="Solução Tecnológica - Transforme seu Negócio">                        <!-- Título para compartilhamento em redes sociais -->
+    <meta property="og:description" content="Descubra como nossa solução pode revolucionar sua empresa">      <!-- Descrição para compartilhamento em redes sociais -->
+    <meta property="og:image" content="assets/images/og-image.jpg">                                          <!-- Imagem para compartilhamento em redes sociais -->
+    <meta property="og:url" content="https://seusite.com">                                                   <!-- URL para compartilhamento em redes sociais -->
+    <title>Solução Tecnológica | Transforme seu Negócio</title>                                              <!-- Título da página que aparece na aba do navegador -->
+    
+    <!-- Google Fonts -->                                                                                     <!-- Seção de importação de fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">                                              <!-- Pré-conexão com servidor de fontes Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                                     <!-- Pré-conexão com CDN de fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><!-- Importa a fonte Inter com diferentes pesos -->
+    
+    <!-- Font Awesome -->                                                                                     <!-- Seção de importação do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!-- Importa os ícones do Font Awesome -->
+    
+    <!-- Video.js -->                                                                                         <!-- Seção de importação do Video.js -->
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet">                               <!-- Importa os estilos do player de vídeo -->
+    
+    <!-- Swiper CSS -->                                                                                       <!-- Seção de importação do Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">               <!-- Importa os estilos do carrossel Swiper -->
+    
+    <!-- Custom CSS -->                                                                                       <!-- Seção de CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">                                                            <!-- Importa o arquivo CSS personalizado -->
+    <!-- Animations CSS -->
+    <link rel="stylesheet" href="css/animations.css">
+</head>                                                                                                       <!-- Fim do cabeçalho -->
+<body>                                                                                                        <!-- Início do corpo do documento -->
+    <!-- Botão de Alternância de Tema -->                                                                    <!-- Seção do botão de tema -->
+    <button id="theme-toggle" class="theme-toggle animate-fade-in" aria-label="Alternar tema">                               <!-- Botão para alternar entre tema claro/escuro -->
+        <i class="fas fa-sun"></i>                                                                           <!-- Ícone do sol para tema claro -->
+        <i class="fas fa-moon"></i>                                                                          <!-- Ícone da lua para tema escuro -->
+    </button>                                                                                                <!-- Fim do botão de tema -->
+
+    <!-- Hero Section -->                                                                                    <!-- Seção principal (hero) -->
+    <section class="hero">                                                                                   <!-- Início da seção hero -->
+        <div class="video-container">                                                                        <!-- Container para o vídeo de fundo -->
+            <video id="hero-video" class="video-js" autoplay loop muted playsinline>                        <!-- Player de vídeo com autoplay e loop -->
+                <source src="assets/videos/hero-background.mp4" type="video/mp4">                           <!-- Fonte do vídeo em formato MP4 -->
+                <source src="assets/videos/hero-background.webm" type="video/webm">                         <!-- Fonte do vídeo em formato WebM -->
+            </video>                                                                                         <!-- Fim do elemento de vídeo -->
+            <div class="overlay animate-fade-in">                                                                           <!-- Overlay sobre o vídeo -->
+                <h1 class="animate-slide-up">Transforme seu Negócio com Tecnologia</h1>                                              <!-- Título principal -->
+                <p class="animate-slide-up" style="animation-delay: 0.2s">Soluções inovadoras para impulsionar sua empresa</p>                                     <!-- Subtítulo -->
+                <button class="cta-button animate-slide-up" style="animation-delay: 0.4s">Comece Agora</button>                                           <!-- Botão de call-to-action -->
+            </div>                                                                                          <!-- Fim do overlay -->
+        </div>                                                                                              <!-- Fim do container de vídeo -->
+    </section>                                                                                              <!-- Fim da seção hero -->
+
+    <!-- Seção de Preços -->
+    <section class="pricing-section">                                                                         <!-- Seção de preços -->
+        <div class="container">                                                                               <!-- Container para centralizar conteúdo -->
+            <h2 class="section-title animate-fade-in">Planos e Preços</h2>                                                   <!-- Título principal da seção -->
+            <p class="section-subtitle animate-fade-in" style="animation-delay: 0.2s">Escolha o plano ideal para o seu negócio</p>                         <!-- Subtítulo explicativo -->
+            
+            <div class="pricing-toggle animate-fade-in" style="animation-delay: 0.3s">
+                <span>Mensal</span>                                                                           <!-- Texto indicando opção mensal -->
+                <label class="switch">                                                                        <!-- Container do switch toggle -->
+                    <input type="checkbox" class="price-toggle">                                             <!-- Input checkbox para controle do toggle -->
+                    <span class="slider round"></span>                                                        <!-- Elemento visual do toggle -->
+                </label>
+                <span>Anual <span class="discount">(Economize 20%)</span></span>                             <!-- Texto indicando opção anual com desconto -->
+            </div>
+
+            <div class="pricing-cards">                                                                       <!-- Container dos cards de preço -->
+                <!-- Plano Básico -->
+                <div class="pricing-card animate-scale-in" style="animation-delay: 0.4s">                                                                    <!-- Card do plano básico -->
+                    <div class="card-header">                                                                 <!-- Cabeçalho do card -->
+                        <h3>Básico</h3>                                                                       <!-- Nome do plano -->
+                        <div class="price">                                                                   <!-- Container dos preços -->
+                            <span class="price-monthly">R$ 99</span>                                         <!-- Preço mensal -->
+                            <span class="price-annual">R$ 79</span>                                          <!-- Preço anual com desconto -->
+                            <span class="period">/mês</span>                                                 <!-- Período de cobrança -->
+                        </div>
+                    </div>
+                    <ul class="features">                                                                     <!-- Lista de recursos do plano -->
+                        <li><i class="fas fa-check"></i> Até 5 usuários</li>                                <!-- Item de recurso com ícone -->
+                        <li><i class="fas fa-check"></i> 10GB de armazenamento</li>                         <!-- Item de recurso com ícone -->
+                        <li><i class="fas fa-check"></i> Suporte por email</li>                             <!-- Item de recurso com ícone -->
+                        <li><i class="fas fa-check"></i> Documentação básica</li>                           <!-- Item de recurso com ícone -->
+                    </ul>
+                    <button class="cta-button">Começar Agora</button>                                        <!-- Botão de call-to-action -->
+                </div>
+
+                <!-- Plano Pro -->
+                <div class="pricing-card featured animate-scale-in" style="animation-delay: 0.5s">                                                           <!-- Card do plano profissional (destacado) -->
+                    <div class="card-header">                                                                 <!-- Cabeçalho do card -->
+                        <div class="popular-tag">Mais Popular</div>                                          <!-- Tag de destaque -->
+                        <h3>Profissional</h3>                                                                <!-- Nome do plano -->
+                        <div class="price">                                                                   <!-- Container dos preços -->
+                            <span class="price-monthly">R$ 199</span>                                        <!-- Preço mensal -->
+                            <span class="price-annual">R$ 159</span>                                         <!-- Preço anual com desconto -->
+                            <span class="period">/mês</span>                                                 <!-- Período de cobrança -->
+                        </div>
+                    </div>
+                    <ul class="features">                                                                     <!-- Lista de recursos do plano -->
+                        <li><i class="fas fa-check"></i> Até 20 usuários</li>                               <!-- Item de recurso com ícone -->
+                        <li><i class="fas fa-check"></i> 50GB de armazenamento</li>                         <!-- Item de recurso com ícone -->
+                        <li><i class="fas fa-check"></i> Suporte prioritário</li>                           <!-- Item de recurso com ícone -->
+                        <li><i class="fas fa-check"></i> Integração API</li>                                <!-- Item de recurso com ícone -->
+                        <li><i class="fas fa-check"></i> SSO                                                <!-- Item de recurso com ícone -->
+                            <span class="tooltip" data-tooltip="Single Sign-On">?</span></li>                <!-- Tooltip explicativo -->
+                    </ul>
+                    <button class="cta-button">Começar Agora</button>                                        <!-- Botão de call-to-action -->
+                </div>
+
+                <!-- Plano Enterprise -->
+                <div class="pricing-card animate-scale-in" style="animation-delay: 0.6s">                                                                    <!-- Card do plano enterprise -->
+                    <div class="card-header">                                                                 <!-- Cabeçalho do card -->
+                        <h3>Enterprise</h3>                                                                   <!-- Nome do plano -->
+                        <div class="price">                                                                   <!-- Container dos preços -->
+                            <span class="price-monthly">R$ 499</span>                                        <!-- Preço mensal -->
+                            <span class="price-annual">R$ 399</span>                                         <!-- Preço anual com desconto -->
+                            <span class="period">/mês</span>                                                 <!-- Período de cobrança -->
+                        </div>
+                    </div>
+                    <ul class="features">                                                                     <!-- Lista de recursos do plano -->
+                        <li><i class="fas fa-check"></i> Usuários ilimitados</li>                           <!-- Item de recurso com ícone -->
+                        <li><i class="fas fa-check"></i> Armazenamento ilimitado</li>                       <!-- Item de recurso com ícone -->
+                        <li><i class="fas fa-check"></i> Suporte 24/7</li>                                  <!-- Item de recurso com ícone -->
+                        <li><i class="fas fa-check"></i> SAML/SSO                                           <!-- Item de recurso com ícone -->
+                            <span class="tooltip" 
+                            data-tooltip="Security Assertion Markup Language">?</span></li>                   <!-- Tooltip explicativo -->
+                        <li><i class="fas fa-check"></i> SLA personalizado</li>                             <!-- Item de recurso com ícone -->
+                    </ul>
+                    <button class="cta-button">Fale Conosco</button>                                         <!-- Botão de call-to-action -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Depoimentos -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">O que nossos clientes dizem</h2>
+            <p class="section-subtitle animate-fade-in" style="animation-delay: 0.2s">Depoimentos de empresas que confiam em nossa solução</p>
+
+            <div class="swiper testimonials-slider">
+                <div class="swiper-wrapper">
+                    <!-- Depoimento 1 -->
+                    <div class="swiper-slide animate-scale-in" style="animation-delay: 0.3s">
+                        <div class="testimonial-card">
+                            <div class="client-info">
+                                <img src="assets/images/client1.jpg" alt="Cliente 1" class="client-photo">
+                                <div class="client-details">
+                                    <h4>João Silva</h4>
+                                    <p>CTO, Tech Solutions</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"A implementação da solução transformou completamente nossa operação.
+                                     A eficiência aumentou em 40% e o tempo de resposta caiu pela metade."</p>
+                            </div>
+                            <div class="company-logo">
+                                <img src="assets/images/company1.png" alt="Tech Solutions">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 2 -->
+                    <div class="swiper-slide animate-scale-in" style="animation-delay: 0.4s">
+                        <div class="testimonial-card">
+                            <div class="client-info">
+                                <img src="assets/images/client2.jpg" alt="Cliente 2" class="client-photo">
+                                <div class="client-details">
+                                    <h4>Maria Santos</h4>
+                                    <p>Diretora de Operações, InovaCorp</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"O suporte técnico é excepcional e a plataforma é intuitiva. 
+                                    Conseguimos reduzir custos operacionais em 30% no primeiro trimestre."</p>
+                            </div>
+                            <div class="company-logo">
+                                <img src="assets/images/company2.png" alt="InovaCorp">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 3 -->
+                    <div class="swiper-slide animate-scale-in" style="animation-delay: 0.5s">
+                        <div class="testimonial-card">
+                            <div class="client-info">
+                                <img src="assets/images/client3.jpg" alt="Cliente 3" class="client-photo">
+                                <div class="client-details">
+                                    <h4>Carlos Oliveira</h4>
+                                    <p>CEO, FutureTech</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"A escalabilidade da solução nos permitiu crescer sem preocupações com infraestrutura. 
+                                    Recomendo fortemente para empresas em expansão."</p>
+                            </div>
+                            <div class="company-logo">
+                                <img src="assets/images/company3.png" alt="FutureTech">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navegação do Slider -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Perguntas Frequentes</h2>
+            <p class="section-subtitle animate-fade-in" style="animation-delay: 0.2s">Tire suas dúvidas sobre nossa solução</p>
+
+            <div class="faq-container">
+                <!-- Pergunta 1 -->
+                <div class="faq-item animate-slide-up" style="animation-delay: 0.3s">
+                    <div class="faq-question">
+                        <h3>Como funciona a integração com outros sistemas?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nossa plataforma oferece integração nativa com os principais sistemas do mercado através de APIs RESTful. 
+                            Também disponibilizamos documentação detalhada e 
+                            suporte técnico especializado para implementações personalizadas.</p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="faq-item animate-slide-up" style="animation-delay: 0.4s">
+                    <div class="faq-question">
+                        <h3>Quais são os requisitos mínimos de hardware?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A solução é totalmente baseada em nuvem, não exigindo infraestrutura local. 
+                            Basta ter um navegador moderno e conexão com a internet.
+                             Recomendamos uma conexão de pelo menos 5Mbps para melhor experiência.</p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 3 -->
+                <div class="faq-item animate-slide-up" style="animation-delay: 0.5s">
+                    <div class="faq-question">
+                        <h3>Como é feito o backup dos dados?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Realizamos backups automáticos diários com retenção de 30 dias.
+                         Os dados são armazenados em data centers com certificação ISO 27001 e replicação geográfica
+                          para garantir máxima segurança e disponibilidade.</p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 4 -->
+                <div class="faq-item animate-slide-up" style="animation-delay: 0.6s">
+                    <div class="faq-question">
+                        <h3>Como posso importar meus dados existentes?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oferecemos várias opções para importação de dados:</p>
+                        <ul>
+                            <li>Importação via CSV/Excel</li>
+                            <li>API de importação em massa</li>
+                            <li>Ferramenta de migração assistida</li>
+                        </ul>
+                        <div class="demo-container">
+                            <div class="code-snippet">
+                                <pre><code>// Exemplo de importação via API
+const importData = async (data) => {
+    const response = await fetch('https://api.seusistema.com/v1/import', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer YOUR_API_KEY'
+        },
+        body: JSON.stringify(data)
+    });
+    return response.json();
+};</code></pre>
+                                <button class="copy-button">
+                                    <i class="fas fa-copy"></i> Copiar Código
+                                </button>
+                            </div>
+                            <div class="demo-gif">
+                                <img src="assets/images/import-demo.gif" alt="Demonstração de Importação">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pergunta 5 -->
+                <div class="faq-item animate-slide-up" style="animation-delay: 0.7s">
+                    <div class="faq-question">
+                        <h3>Qual é o tempo médio de implementação?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O tempo de implementação varia conforme o tamanho e complexidade do projeto. Em média:</p>
+                        <ul>
+                            <li>Plano Básico: 1-2 semanas</li>
+                            <li>Plano Profissional: 2-4 semanas</li>
+                            <li>Plano Enterprise: 4-8 semanas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Entre em Contato</h2>
+            <p class="section-subtitle animate-fade-in" style="animation-delay: 0.2s">Preencha o formulário abaixo e nossa equipe entrará em contato</p>
+
+            <div class="contact-container">
+                <form class="contact-form animate-scale-in" style="animation-delay: 0.3s" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" required 
+                               pattern="[A-Za-zÀ-ÿ\s]{3,}" 
+                               title="Digite seu nome completo (mínimo 3 caracteres)">
+                        <span class="validation-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="validation-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Empresa</label>
+                        <input type="text" id="company" name="company" required>
+                        <span class="validation-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone" 
+                               pattern="[0-9]{10,11}" 
+                               title="Digite um número de telefone válido">
+                        <span class="validation-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="validation-message"></span>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">
+                            Concordo com a <a href="#" class="privacy-link">Política de Privacidade</a> 
+                            e autorizo o uso dos meus dados para contato.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="cta-button">
+                        <span class="button-text">Enviar Mensagem</span>
+                        <span class="button-loading">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-card animate-scale-in" style="animation-delay: 0.4s">
+                        <i class="fas fa-envelope"></i>
+                        <h3>E-mail</h3>
+                        <p>contato@seusistema.com</p>
+                    </div>
+
+                    <div class="info-card animate-scale-in" style="animation-delay: 0.5s">
+                        <i class="fas fa-phone"></i>
+                        <h3>Telefone</h3>
+                        <p>+55 (11) 99999-9999</p>
+                    </div>
+
+                    <div class="info-card animate-scale-in" style="animation-delay: 0.6s">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Endereço</h3>
+                        <p>Av. Paulista, 1000<br>São Paulo - SP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cookies Consent -->
+    <div class="cookies-consent" id="cookiesConsent">
+        <div class="cookies-content">
+            <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa 
+                <a href="#" class="privacy-link">Política de Privacidade</a>.</p>
+            <div class="cookies-buttons">
+                <button class="accept-cookies">Aceitar</button>
+                <button class="reject-cookies">Rejeitar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Tawk.to Chat Widget -->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/YOUR_WIDGET_ID/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!-- StatusCake Monitoring -->
+    <script type="text/javascript">
+        (function() {
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            sc.src = 'https://www.statuscake.com/App/statuscake.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(sc, s);
+        })();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
