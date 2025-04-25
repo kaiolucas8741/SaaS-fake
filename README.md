@@ -1,20 +1,25 @@
-# Landing Page Profissional
+# Landing Page SaaS - Soluções Empresariais
 
-Landing page moderna e responsiva desenvolvida com foco em performance e experiência do usuário.
+Landing page moderna e responsiva para uma plataforma SaaS de soluções tecnológicas empresariais, desenvolvida com foco em performance e experiência do usuário.
 
 ## Estrutura do Projeto
 
 ```
-landing2/
+SaaS-fake/
 ├── assets/
 │   ├── images/
 │   ├── videos/
 │   └── icons/
 ├── css/
-│   └── styles.css
+│   ├── styles.css
+│   └── animations.css
 ├── js/
 │   └── main.js
-└── index.html
+├── index.html
+├── manifest.json
+├── robots.txt
+├── sitemap.xml
+└── .htaccess
 ```
 
 ## Tecnologias Utilizadas
@@ -38,12 +43,14 @@ landing2/
 - Lazy loading de imagens
 - Otimizado para SEO
 - Compatível com todos os navegadores modernos
+- Tema claro/escuro
+- Animações suaves
 
 ## Instalação
 
 1. Clone o repositório:
 ```bash
-git clone https://seu-repositorio/landing2.git
+git clone https://github.com/kaiolucas8741/SaaS-fake.git
 ```
 
 2. Instale as dependências:
@@ -64,6 +71,7 @@ npm start
 - Compressão de imagens
 - Fontes otimizadas
 - Schema markup para SEO
+- Performance otimizada para conversão
 
 ## Contribuição
 
